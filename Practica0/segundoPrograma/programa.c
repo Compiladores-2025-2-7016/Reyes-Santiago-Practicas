@@ -23,5 +23,4 @@ int main(void) {
     log_debug("Programa finalizado.");
 
     return 0;
-} 
-
+}
