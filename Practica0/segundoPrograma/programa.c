@@ -1,3 +1,5 @@
+// segundo programa, ejercicio 9 de la practica 0
+
 #include <stdio.h>
 #pragma GCC warning "Compilando este programa con advertencias activadas."
 
@@ -21,4 +23,5 @@ int main(void) {
     log_debug("Programa finalizado.");
 
     return 0;
-}
+} 
+
