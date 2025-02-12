@@ -116,8 +116,16 @@
 </ul>
 
 <h2>Redacte un informe detallado con sus resultados y conclusiones.</h2>
-
-
+<h3>CONCLUSIONES</h3>
+<p>Los programas deben de pasar por un proceso complejo que muchas veces pasa por alto antes de que este pueda ser ejecutado. El usuario experimenta el proceso de compilación en cuatro fases principales:</p>
+<ul>
+    <li>Preprocesamiento: Se ejecutan todas las directivas del preprocesador, se expanden macros y constantes definidas, se eliminan los comentarios del código, se insertan los contenidos de los archivos de cabecera, se genera un archivo .i.</li>
+    <li>Compilación: Se traduce el código fuente de C a código ensamblador, se verifica la sintaxis del código fuente, se generan advertencias y errores de sintaxis, se produce un archivo .s con instrucciones en lenguaje ensamblador.
+    </li>
+    <li>Ensamblado: Se convierte el código ensamblador en código máquina binario, se genera un archivo objeto .o, que contiene instrucciones en lenguaje de máquina.</li>
+    <li>Enlazado: Se combinan archivos objeto y bibliotecas necesarias, se resuelven referencias a funciones externas, se genera un ejecutable listo para ejecutarse.</li>
+</ul>
+<p>Es común que se presenten complicaciones durante alguno de estos procesos, sin embargo, el uso de herramientas adecuadas y la comprensión de errores y advertencias mejora la eficiencia del desarrollo.</p>
 
 
 
