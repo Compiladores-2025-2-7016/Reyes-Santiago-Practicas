@@ -1,26 +1,29 @@
-// segundo programa, ejercicio 9 de la practica 0
-
 #include <stdio.h>
-#pragma GCC warning "Compilando este programa con advertencias activadas."
 
-#define MAX(a, b) ((a) > (b) ? (a) : (b))
+// Anula cualquier definición externa de MULTIPLICADOR, asegurando que se use el valor por defecto.
+#undef MULTIPLICADOR
 
-#ifndef DEBUG
-    #define DEBUG 1
-#endif
+// Informa al compilador que se usará el multiplicador por defecto.
+#pragma message ("Usando el multiplicador por defecto; se ignorarán definiciones externas de MULTIPLICADOR.")
 
-#ifdef DEBUG
-    #define log_debug(msg) printf("DEBUG: %s\n", msg)
-#else
-    #define log_debug(msg)
-#endif
+// Establece un nuevo número de línea y nombre de archivo para mejorar la legibilidad de los mensajes del compilador.
+#line 42 "programa_final.c"
+
+// Emite una advertencia en tiempo de compilación para notificar que se ha anulado la macro MULTIPLICADOR.
+#warning "La macro MULTIPLICADOR ha sido anulada. Se usará el valor por defecto 2."
+
+// Función que calcula el área de un círculo dado su radio.
+double calcular_area(double radio) {
+    return 3.141592653589793 * radio * radio;
+}
 
 int main(void) {
-    int x = 5, y = 10;
-    log_debug("Iniciando el programa.");
-
-    printf("El máximo entre %d y %d es %d\n", x, y, MAX(x, y));
-    log_debug("Programa finalizado.");
-
+    double radio = 3.0;
+    double area = calcular_area(radio);
+    int multiplicador = 2; // Valor por defecto, garantizado por #undef y la advertencia.
+    double resultado = area * multiplicador;
+    
+    printf("Radio: %.2f\nArea: %f\nMultiplicador: %d\nResultado: %f\n",
+           radio, area, multiplicador, resultado);
     return 0;
 }

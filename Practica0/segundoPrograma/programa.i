@@ -552,14 +552,29 @@ extern int __vsnprintf_chk (char * restrict, size_t, int, size_t,
 # 500 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h" 2 3 4
 # 62 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h" 2 3 4
 # 2 "programa.c" 2
-#pragma GCC warning "Compilando este programa con advertencias activadas."
-# 16 "programa.c"
+
+
+
+
+
+#pragma message("Usando el multiplicador por defecto; se ignorar\303\241n definiciones externas de MULTIPLICADOR.")
+# 42 "programa_final.c"
+
+
+
+
+
+double calcular_area(double radio) {
+    return 3.141592653589793 * radio * radio;
+}
+
 int main(void) {
-    int x = 5, y = 10;
-    printf("DEBUG: %s\n", "Iniciando el programa.");
+    double radio = 3.0;
+    double area = calcular_area(radio);
+    int multiplicador = 2;
+    double resultado = area * multiplicador;
 
-    printf("El máximo entre %d y %d es %d\n", x, y, ((x) > (y) ? (x) : (y)));
-    printf("DEBUG: %s\n", "Programa finalizado.");
-
+    printf("Radio: %.2f\nArea: %f\nMultiplicador: %d\nResultado: %f\n",
+           radio, area, multiplicador, resultado);
     return 0;
 }
