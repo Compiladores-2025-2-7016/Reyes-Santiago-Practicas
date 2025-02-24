@@ -2,7 +2,11 @@
 
 <h2>Ejercicios</h2>
 <h3>¿Qué ocurre si agregamos una regla simple como t_espacio = r'\ +' y nada más? (0.5 pts)</h3>
+Obtenemos un ERROR: Rule 't_ESPACIO' defined for an unspecified token ESPACIO. Esto es porque siempre que se agrega una regla debemos agregar su equivalente en la lista de tokens
+
 <h3>¿Qué ocurre si quitamos algún elemento de la lista de tokens? (0.5 pts)</h3>
+En este caso obtendríamos el mismo error del ejercicio anterior
+
 <h3>¿Cómo podemos calcular la posición en columna en caso de un error léxico? (0.5 pts)</h3>
 <h3>¿Qué significa el valor que se aloja en t.value? (0.5 pts)</h3>
 <h3>¿Qué pasa al ejecutar el programa e introducir cadenas de caracteres y de dígitos sin espacios en el archivo de entrada? (0.5 pts)</h3>

@@ -13,7 +13,7 @@ tokens = (
     "PALABRA",
     "NUMERO",
     "PARIZQ",
-    "PARDER",
+    "PARDER"
 )
 
 
