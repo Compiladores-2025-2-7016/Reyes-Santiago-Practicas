@@ -22,7 +22,9 @@ Suponiendo que mi archivo de entrada contiene la cadena <code>ksajdlfjsdakf23423
 
 <h3>¿Qué ocurre si introducimos caracteres como "*" en el archivo de entrada? (0.5 pts)</h3>
 <h3>Modificar al código anterior en un archivo nuevo, de tal manera que ejecute una acción léxica al detectar lo siguiente: (2 pts)</h3>
-La expresión regular para los hexadecimales en lenguaje C.
-5 palabras reservadas del lenguaje Python.
-Los identificadores válidos del lenguaje Java, con longitud máxima de 32 caracteres (Sugerencia: use el operador {m,n}).
-Los espacios en blanco.
+- La expresión regular para los hexadecimales en lenguaje C.
+- 5 palabras reservadas del lenguaje Python.
+- Los identificadores válidos del lenguaje Java, con longitud máxima de 32 caracteres (Sugerencia: use el operador {m,n}).
+- Los espacios en blanco.
+
+El nuevo código se encuentra en la ruta /Practica1/env-practica1/src/segundo-lex/lex.py
