@@ -43,8 +43,9 @@ t_ignore  = " \t"
 
 # Esta función nos permite manejar el estado de error a nuestra conveniencia
 def t_error(t):
-    print("Error léxico. Caracter no reconocido: '%s'" % t.value[0])
-    t.lexer.skip(1)
+    """Manejo de errores léxicos, mostrando la posición en la línea"""
+    print(f"Error léxico en línea {t.lexer.lineno}, columna {t.lexpos}: '{t.value[0]}'")
+    t.lexer.skip(1) # ignora el caracter erroneo y continua el analisis
 
 
 
