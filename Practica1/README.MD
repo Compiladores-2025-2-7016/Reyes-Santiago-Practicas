@@ -10,8 +10,8 @@ En este caso obtendríamos el mismo error del ejercicio anterior
 <h3>¿Cómo podemos calcular la posición en columna en caso de un error léxico? (0.5 pts)</h3>
 Para este punto utilicé el atributo <code>t.lexpos</code> que proporciona la posición absoluta del caractér en el código fuente. Para obtener la posición en la que se encuentra el error opté por imprimir lo siguiente:<br>
 <code>print(f"Error léxico en línea {t.lexer.lineno}, columna {t.lexpos}: '{t.value[0]}'")</code><br>
-- t.lexer.lineno nos proporciona la línea
-- t.lexpos nos proporciona la columna
+<code>- t.lexer.lineno nos proporciona la línea</code><br>
+<code>- t.lexpos nos proporciona la columna</code>
 
 
 <h3>¿Qué significa el valor que se aloja en t.value? (0.5 pts)</h3>
