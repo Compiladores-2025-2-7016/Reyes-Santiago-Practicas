@@ -13,9 +13,13 @@ Para este punto utilicé el atributo <code>t.lexpos</code> que proporciona la po
 <code>- t.lexer.lineno nos proporciona la línea</code><br>
 <code>- t.lexpos nos proporciona la columna</code>
 
-
 <h3>¿Qué significa el valor que se aloja en t.value? (0.5 pts)</h3>
+Es el valor que está siendo analizado
+
 <h3>¿Qué pasa al ejecutar el programa e introducir cadenas de caracteres y de dígitos sin espacios en el archivo de entrada? (0.5 pts)</h3>
+Suponiendo que mi archivo de entrada contiene la cadena <code>ksajdlfjsdakf234234hasdkfh234jaslkdf23h4234alksdhf</code>, el resultado de ejecutar el programa va separando entre 'palabras' y 'números' encontrados como podemos ver en la siguiente imagen: <br>
+<img src='/Practica1/env-practica1/src/img/ejemplo.png'>
+
 <h3>¿Qué ocurre si introducimos caracteres como "*" en el archivo de entrada? (0.5 pts)</h3>
 <h3>Modificar al código anterior en un archivo nuevo, de tal manera que ejecute una acción léxica al detectar lo siguiente: (2 pts)</h3>
 La expresión regular para los hexadecimales en lenguaje C.
