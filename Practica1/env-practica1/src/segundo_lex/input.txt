@@ -1,0 +1,6 @@
+def funcion():
+    variable = 0xAB12
+    class ClaseEjemplo:
+        return 42
+    _identificadorValidoJava32chars_abcdefghijklmno
+    if else
