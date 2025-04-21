@@ -1,0 +1,5 @@
+float total;
+int a;
+
+total = 10;
+a = total * 2 + (3 - 1);

@@ -1,0 +1,2 @@
+int resultado;
+resultado = * 5 + 3;
