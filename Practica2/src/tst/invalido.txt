@@ -1,0 +1,2 @@
+int var1 = 42@;
+float var2 = $35.6;
